@@ -1,5 +1,4 @@
-import {Navlink} from 'react-router-dom';
-
+import React from 'react'
 
 const Navbar = () => {
   return (
@@ -8,16 +7,7 @@ const Navbar = () => {
         <h2 className='navbar-title'>THE PLANETS</h2>
         <div className='planets'>
           <ul className='navbar-planets-name'>
-            <li className='planet-name'>
-              <Navlink
-                 to="/"
-                 className={({isActive})=>{
-                  isActive ? "active" : ""
-                 }}
-                 >
-                  mercury
-                 </Navlink>
-            </li>
+            <li className='planet-name'>mercury</li>
             <li className='planet-name'>venus</li>
             <li className='planet-name'>earth</li>
             <li className='planet-name'>mars</li>
